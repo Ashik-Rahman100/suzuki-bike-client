@@ -1,0 +1,14 @@
+.details {
+  width: 130px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: white;
+  color: tomato;
+  font-weight: bold;
+  border: 2px solid tomato;
+}
+.details:hover {
+  background-color: tomato;
+  color: white;
+  border: 2px solid white;
+}

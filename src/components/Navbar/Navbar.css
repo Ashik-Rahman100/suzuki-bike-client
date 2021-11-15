@@ -1,0 +1,9 @@
+nav a {
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: bold;
+}
+.img {
+  width: 100px;
+  height: 90px;
+}

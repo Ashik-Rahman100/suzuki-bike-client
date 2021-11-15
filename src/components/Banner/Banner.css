@@ -1,0 +1,21 @@
+.carousel img {
+  height: 90vh;
+}
+.my-btn {
+  width: 200px;
+  height: 40px;
+  border-style: none;
+  background-color: rgb(17, 67, 233);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nav-item a {
+  color: white;
+}
+
+.nav-item a:hover {
+  color: aqua;
+}
