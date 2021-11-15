@@ -1,7 +1,10 @@
 import React from 'react';
 import img1 from '../../images/blog/blog1.jpg';
-import img3 from '../../images/blog/blog2.jpg';
-import img2 from '../../images/blog/blog3.jpg';
+import img2 from '../../images/blog/blog2.jpg';
+import img3 from '../../images/blog/blog3.jpg';
+import img4 from '../../images/blog/blog4.jpg';
+import img5 from '../../images/blog/blog5.jpg';
+import img6 from '../../images/blog/blog6.jpg';
 const Blog = () => {
     return (
 <div className='container'>
@@ -59,7 +62,7 @@ const Blog = () => {
   </div>
   <div className="col ">
     <div className="card h-100">
-      <img  className="card-img-top" src ={img5} alt="..."/>
+      <img  className="card-img-top" src ={img6} alt="..."/>
       <div className="card-body">
         <h5 className="card-title fw-bold" style={{color:'tomato'}}>ALEX RINS BRINGS SUZUKI A HOME PODIUM IN JAPAN</h5>
         <p className="card-text text-start ">The 2018 Japanese GP took place under sunny skies in front of 55,000 passionate motorbike fans at Twin Ring Motegi.</p>
