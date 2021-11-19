@@ -15,7 +15,7 @@ const Review = (props) => {
               emptySymbol ="far fa-star text-warning"
               fullSymbol ="fas fa-star text-warning"
               />
-              <p className="card-text"><span>"{feedback.slice(0,150)}"</span></p>
+              <p className="card-text"><span>"{feedback}"</span></p>
 
             </div>
            </div>
