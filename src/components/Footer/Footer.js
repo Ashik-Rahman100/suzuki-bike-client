@@ -1,56 +1,73 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import footer from '../../images/Footer/footer.jpg';
-
+import img2 from "../../images/destination/cruiser.jpg";
+import img1 from '../../images/destination/scooter.png';
+import img3 from '../../images/destination/sports.png';
+import img4 from '../../images/destination/super_sports.png';
+import './Footer.css';
 const Footer = () => {
     return (
-        <div className=' mt-4 '>
-            <footer>
-            <div>
-              <div className="card bg-dark text-white">
-                 <img   className="card-img mt-5" src={footer} style ={{height:'65vh'}}   alt="..."/>
-                 <div className="card-img-overlay">
-                     <div>
-                     
-                     </div><hr />
-                     
-                     <div>
-                        <div className='row'>
-                           <ul className=' fs-5 col'>
-                               <Link className='text-decoration-none ms-2 text-danger' to='/home'>Home</Link>
-                               <Link className='text-decoration-none ms-2' to='/about'>About</Link>
-                               <Link className='text-decoration-none ms-2' to='/gallery'>Gallery</Link>
-                               <Link className='text-decoration-none ms-2' to='/services'>Services</Link>
-                               <Link className='text-decoration-none ms-2' to='/blog'>Blog</Link>
-                               <Link className='text-decoration-none ms-2' to='/trainers'>Trainers</Link>
-                           </ul>
-                        </div><hr />
-                        <div className='col'>
-                        <div className="input-group mb-3 w-50 mx-auto">
-                           <input type="text" className="form-control " placeholder="Enter Your Email" aria-label="Recipient's username" aria-describedby="button-addon2"/>
-                           <button className="btn btn-outline-warning" type="button" id="button-addon2">Sign In</button>
-                          </div>
+        <div>
+        <div className="footer-container">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-3">
+                        <div className="left-container text-start">  
+                           <h3>Suzuki Bike Store</h3>
+                            <h5>All The Information You Need</h5>
+                            <p>On our blog, you’ll discover in-depth resources and guidance that’ll help you navigate every step of your car buying process.</p>
+                            <button className='footer-btn'>Visit</button>
+                            
                         </div>
-                        <div>
-                            <h2 className='text-center'>Follow Us</h2>
-                            <div>
-                            {/* icon */}
+                    </div>
+                    
+                    <div className="col-md-2">
+                        <div className="footer-menu-container">
+                            <h2>Pages</h2>
+                            <ul className="footer-menu">
+                                <li className="menu">Home</li>
+                                <li className="menu">Products</li>
+                                <li className="menu">About</li>
+                                <li className="menu">Login</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <h2 className='footer-gal'>Products</h2>
+                    <div className='row'>
+                        <div className  = 'col-md-4 pt-1'>
+                            <img className ='gallery-img' src={img1} alt="" />
+                        </div>
+                        <div className  = 'col-md-4 pt-1'>
+                            <img className ='gallery-img' src={img2} alt="" />
+                        </div>                        
+                    </div> 
+                    <div className='row'>
+                        <div className  = 'col-md-4 pt-1 '>
+                            <img className ='gallery-img' src={img3} alt="" />
+                        </div>
+                        <div className  = 'col-md-4 pt-1 '>
+                            <img className ='gallery-img' src={img4} alt="" />
+                        </div>
+                    </div>                                  
+                    </div>
+                    <div className="col-md-3">
+                        <div className="contact-us">
+                            <h2>Contact Us</h2>
+                            <p><small>&& By-now the better car.</small></p>
+                             <input className='form-control mt-5'  type="text" placeholder ='please enter your email' />
+                             <h5 className= 'text-start text-warning'>Phone : +66 223 7900 24</h5>
+                             <div className ='address text-start'>
+                                 <p>Patukhali,Barishal, Bangladesh</p>
+                                <p>812, Dhaka, Bangladesh</p>
+                                <p>B6, Green Road</p>
 
-                            </div>
+                             </div>
                         </div>
-                        <hr />
-                        <div>
-                         <div className="copyRight text-center">
-                             <p className="text-secondary">Suzuki Bike store {(new Date()).getFullYear()} All Rights Reserved</p>
-                         </div>
-                        </div>
-                     </div>
-             </div>
-           </div>
+                    </div>
+                </div>
+            </div>
+            <p className='footer-n'> Suzuki-bike-store © . All rights reserved.</p>
         </div>
-            </footer>
-           
-        </div>
+    </div>
     );
 };
 

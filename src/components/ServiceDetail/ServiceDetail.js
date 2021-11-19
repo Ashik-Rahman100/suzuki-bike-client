@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
+import PlaceOrder from '../Dashboard/PlaceOrder/PlaceOrder';
 
 const ServiceDetail = () => {
     const [services, setServices] = useState()
@@ -18,7 +18,9 @@ const ServiceDetail = () => {
     // const{title,img,name,time,price,dis}  = matchService;
 
     return (
-        <div>
+        <div className ='row'>
+            <h2 className ='text--center fw-bold '>Place Order</h2>
+            <div className ='col-md-6 col-12'>
             <div className="card m-3 w-75 mx-auto bg-dark text-white">
              <img src={matchService?.img} className="card-img-top"  alt="..."/>
             <div className="card-body">
@@ -29,9 +31,13 @@ const ServiceDetail = () => {
 
                <p className="card-text"> <span className ='fw-bold text-warning'>Discription: </span>{matchService?.dis}</p>
               
-              <Link to='/booking'><button className = 'details'>Order Now</button></Link>
+              {/* <Link to='/booking'><button className = 'details'> Place Order</button></Link> */}
              </div>
           </div>
+            </div>
+            <div className ='col-md-6 col-12'>
+                 <PlaceOrder></PlaceOrder>
+            </div>
         </div>
     ); 
 };

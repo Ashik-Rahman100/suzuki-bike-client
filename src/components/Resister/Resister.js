@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Resister = () => {
-    const {signInUsingGoogle, signInUsingEmailPassword,setUser} = useAuth();
+    const {signInUsingGoogle, signInUsingEmailPassword,setUser, updateName} = useAuth();
     const location = useLocation();
     const history = useHistory();
  
@@ -36,6 +36,7 @@ const Resister = () => {
         signInUsingEmailPassword(email, password)
         .then((res) => {
             // Signed in 
+            updateName(name)
             const user = res.user;
             setUser(user)
             history.push(redirect_uri);
@@ -65,7 +66,7 @@ const Resister = () => {
               })
     }
     return (
-        <div>
+        <div className ='mb-4'>
              <h1 className= 'text-center mt-5 fw-bold'><span className ='text-warning'>CONTACT </span>US</h1>
             <div className='w-75 mx-auto rounded p-5 mt-4' style= {{backgroundColor:'black'}}>
             <div className= 'w-75 mx-auto ' >

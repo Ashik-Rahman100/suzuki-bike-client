@@ -37,7 +37,7 @@ const Navbar = () => {
                     <Link to='/blog'>BLOG</Link>
                  </li>
                  <li className="nav-item mb-2">
-                    <Link to='/booking'>DASHBOARD</Link>
+                    <Link to='/dashbord'>DASHBOARD</Link>
                  </li>
                  <li className="nav-item mb-2">
                     <Link to ='/login'>CONTACT</Link>
@@ -45,7 +45,9 @@ const Navbar = () => {
                </ul>
                <div className='row w-25 mx-auto'>
                   <div className ='col'>
-                  <span className='text-white pe-2'>Sign In As: {user?.displayName}</span>          
+                  {/* <span className='text-white pe-2'>name: {user?.displayName}</span> */}
+                  <p className='text-white pe-2 fw-bold'> {user?.email}</p>
+                            
                   </div>
                   <div className ='col'>
                   {

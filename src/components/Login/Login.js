@@ -52,13 +52,26 @@ const Login = () => {
                 // console.log(result.user);
                 const user = res.user;
                 setUser(user);
+                
                 history.push(redirect_uri);
                 window.location.reload()
               })
     }
+                  
+    // const saveUser = (email, displayName, method) => {
+    //     const user = { email, displayName };
+    //     fetch('http://localhost:5000/users', {
+    //         method: method,
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify(user)
+    //     })
+    //         .then()
+    // }
 
     return (
-        <div >
+        <div className ='mb-4'>
             <h1 className= 'text-center mt-5 fw-bold'><span className ='text-warning'>CONTACT </span>US</h1>
             <div className='w-75 mx-auto rounded p-5 mt-4' style= {{backgroundColor:'tomato'}}>
             <div className= 'w-75 mx-auto ' >
@@ -78,7 +91,7 @@ const Login = () => {
             <div>
             
 
-            <p className ='text-white'>Are You New User? <Link to= '/resister'>Please Register Now</Link></p>
+            <p className ='text-white'>Are You New User? <Link to= '/register'>Please Register Now</Link></p>
             </div>
             </div>
         </div>
