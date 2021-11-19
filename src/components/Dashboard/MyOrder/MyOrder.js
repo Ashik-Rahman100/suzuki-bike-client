@@ -6,7 +6,7 @@ const MyOrder = () => {
   const [orders,setOrders] = useState([]);
   
   useEffect(() =>{
-    const url = `http://localhost:5000/addBook?email=${user.email}`;
+    const url = `https://boiling-reaches-53434.herokuapp.com//addBook?email=${user.email}`;
     fetch(url)
     .then(res => res.json())
     .then(data => setOrders(data));
@@ -15,7 +15,7 @@ const MyOrder = () => {
 
   const handleDeleteProduct = (id) =>{
     
-    const url = `http://localhost:5000/addBook/${id}`;
+    const url = `https://boiling-reaches-53434.herokuapp.com//addBook/${id}`;
     fetch(url, {
       method:"DELETE"
     })

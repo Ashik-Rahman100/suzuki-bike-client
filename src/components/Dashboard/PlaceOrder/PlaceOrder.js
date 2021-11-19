@@ -24,7 +24,7 @@ const PlaceOrder = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/addBook', data)
+        axios.post('https://boiling-reaches-53434.herokuapp.com//addBook', data)
         .then(res =>{
             if(res.data.insertedId){
                 alert('add to Successfully');

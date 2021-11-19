@@ -6,7 +6,7 @@ import Sidebar from '../../Sidebar/Sidebar';
 const AddReview = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/reviews', data)
+        axios.post('https://boiling-reaches-53434.herokuapp.com//reviews', data)
         .then(res =>{
             if(res.data.insertedId){
                 alert('add to Successfully');
