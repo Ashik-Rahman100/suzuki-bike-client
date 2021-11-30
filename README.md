@@ -4,8 +4,9 @@
 - Server Side Code Link : https://github.com/programming-hero-web-course-4/niche-website-server-side-Ashik-Rahman100
 
 - We Are Provide Suzuki Motor Bike.
-- We Collected WorldClass Motor Bike.
-- We Sell Any Bike Garanty With In.
-- First 1 Year We free Servicing Any Problem Bike.
-- Some times We Discount Some Bike.
+
+* Users can choose any bike and purchase it easily.
+* If users want to cancel her purchase of the bike.
+* Users can give feedback reviews.
+
 # niche-website-client-side-Ashik-Rahman100
